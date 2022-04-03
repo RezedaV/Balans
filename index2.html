@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1 class="title">Движение денег по счетам</h1>
+    <div class="table">
+
+        <!--        первая колонка с названиями-->
+        <div class="table__col_name bold">
+            <div class="table__headerLine organizationName">Счет</div>
+            <!--       Названия Магазинов  приходят из js-->
+            <div class="table__saldoLine">Сальдо</div>
+            <div class="table__BalansLine">Баланс</div>
+        </div>
+
+        <!--       колонка с Нач.балансом-->
+        <div class="table__col_balansStart">
+            <div class="table__headerLine BeginBalance bold">Баланс на начало периода</div>
+            <!--       Начальное сальдо  приходит из js-->
+            <div class="table__saldoLine"></div>
+            <div class="table__BalansLine totalBeginBalance">
+                <!--       сумма Начального сальдо  приходит из js-->
+            </div>
+        </div>
+
+        <!--       Блок с колонками из месяцев, данные приходят из js-->
+        <div class="table__col_months">
+            <div class="table__date bold"></div>
+            <div class="table__debit_credit"></div>
+            <div class="table__debit_credit2"></div>
+            <div class="table__saldo_month">
+                <div class="table__saldo_month1"></div>
+                <div class="table__saldo_month2"></div>
+                <div class="table__saldo_month3"></div>
+            </div>
+            <div class="table__balans_month">
+                <div class="table__balans_month1"></div>
+                <div class="table__balans_month2"></div>
+                <div class="table__balans_month3"></div>
+            </div>
+        </div>
+
+        <!--       колонка с сальдо-->
+        <div class="table__col_saldo">
+            <div class="table__headerLine bold">Сальдо</div>
+            <div class="table__col_saldo__company">
+                <!--   сальдо приходит из js-->
+            </div>
+            <div class="table__col_saldo__company2">
+                <!--    сальдо приходит из js-->
+            </div>
+            <div class="table__saldoLine table__sum_saldo_all">
+                <!--    сумма сальдо приходит из js-->
+            </div>
+            <div class="table__BalansLine"></div>
+
+        </div>
+
+        <!--       колонка с Конеч.балансом-->
+        <div class="table__col_balansEnd">
+            <div class="table__headerLine EndBalance bold">Баланс на конец периода</div>
+            <div class="table__saldoLine"></div>
+            <div class="table__BalansLine totalEndBalance">
+                <!--    баланс на конец периода приходит из js-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!--Скрипты написала.. но получается что для каждого нового Магазина нужно новую функцию писать..
+автоматом(в цикле) для н-р 50 магазинов не подгружает... как именно это сделать пока не догадалась-->
+
